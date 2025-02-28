@@ -3,14 +3,14 @@
 
         <div class="block md:hidden ">
             <div class="flex w-full h-full justify-between items-center">
-                <span class=" h-12 flex mx-4 justify-center items-center">
+                <span class=" h-12 flex mx-4 justify-center items-center ">
                     <button @click='showBar = true' class="flex">
                         <span
                             class="material-symbols-outlined text-white hover:text-second dark:text-second">menu</span>
                     </button>
                 </span>
                 <div class="">
-                    <img src="/ceub-logo.png" alt="AgendaCheck" class="pl-4">
+                    <img src="/ceub-logo.png" alt="Clinica Ceub" class="pl-2 h-12">
                 </div>
                 <a href="#" @click="goTo('login')"
                     class="flex border-2 border-white rounded-xl py-1 px-3 text-white dark:text-white md:dark:text-blue-500 mx-4">
@@ -24,8 +24,8 @@
 
         <div class="w-full h-full flex justify-between mx-auto items-center">
             <div class="flex justify-start">
-                <img src="/ceub-logo.png" alt="AgendaCheck" class="pl-4 hidden md:block mr-2">
-                <div class="self-center text-2xl font-russo text-white hidden md:block">AgendaCheck</div>
+                <img src="/ceub-logo.png" alt="Clinica Ceub" class="pl-2 hidden md:block mr-2 h-12">
+                <!-- <div class="self-center text-2xl font-russo text-white hidden md:block">AgendaCheck</div> -->
             </div>
             <div class="">
                 <ul class="w-full flex justify-end items-center ">
