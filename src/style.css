@@ -1,4 +1,14 @@
 @import "tailwindcss";
+@theme {
+  --color-first: #C00088;
+  --color-second: #43054E;
+  --color-third: #FFE934;
+  --color-fourth: #2C0035;
+  --color-fifth: #543083;
+
+  --font-lexend: Lexend;
+}
+
 
 :root {
   font-family: 'Baloo 2', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -17,7 +27,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  /* color: #646cff; */
   text-decoration: inherit;
 }
 a:hover {
@@ -39,14 +49,14 @@ h1 {
 
 button {
   /* border-radius: 8px; */
-  border: 1px solid transparent;
+  /* border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s; */
 }
 /* button:hover {
   border-color: #646cff;
