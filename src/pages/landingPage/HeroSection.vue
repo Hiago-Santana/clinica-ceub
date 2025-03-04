@@ -1,18 +1,24 @@
 <template>
-    <div class="w-full bg-first h-screen justify-center items-center flex">
+    <div class="flex w-full bg-gradient-to-t from-first  to-second bg-first h-screen justify-center items-center ">
         <div class="max-w-7xl">
             <div class="grid md:grid-cols-2 justify-center items-center">
-                <div class=" bg-black">
-                    <h1 class="">
+                <div class="px-4 md:mb-0 mb-10">
+                    <h1 class="flex justify-center md:justify-start  items-center gap-2">
                         <span class="text-second font-lexend font-bold">Exames </span>
-                        <span>e</span>
+                        <span class="font-lexend font-light">e</span>
                     </h1>
-                    <h1 class="text-second font-lexend font-bold">Consultas</h1>
-                    <h1>em um só</h1>
-                    <h1>Lugar</h1>
+                    <div class="flex justify-center md:justify-start text-second font-lexend font-bold">
+                        <h1>Consultas</h1>
+                    </div>
+                    <div class="flex justify-center md:justify-start font-lexend font-light">
+                        <h1>em um só</h1>
+                    </div>
+                    <div class="flex justify-center md:justify-start font-lexend font-light">
+                        <h1>Lugar</h1>
+                    </div>
                 </div>
                 <div class="w-full ">
-                    <img src="/public/doctor.png" alt="" class="h-120">
+                    <img src="/public/doctor.png" alt="" class="h-100 lg:h-120">
                 </div>
             </div>
 
