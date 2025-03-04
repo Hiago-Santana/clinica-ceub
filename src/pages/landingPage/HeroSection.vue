@@ -21,12 +21,8 @@
                     <img src="/doctor.png" alt="" class="h-100 lg:h-120">
                 </div>
             </div>
-
         </div>
-
-
     </div>
-
 </template>
 <script setup>
 </script>
