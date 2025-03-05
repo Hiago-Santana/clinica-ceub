@@ -6,7 +6,7 @@
                 <span class=" h-12 flex mx-4 justify-center items-center ">
                     <button @click='showBar = true' class="flex">
                         <span
-                            class="material-symbols-outlined text-white hover:text-first dark:text-white">menu</span>
+                            class="material-symbols-outlined text-white bg-second hover:text-first dark:text-white">menu</span>
                     </button>
                 </span>
                 <div class="">
