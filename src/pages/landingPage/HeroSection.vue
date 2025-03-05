@@ -5,15 +5,15 @@
                 <div class="px-4 md:mb-0 mb-10 md:text-2xl text-md">
                     <h1 class="flex justify-center md:justify-start items-center gap-2">
                         <span class="text-white md:text-second font-lexend font-bold">Exames </span>
-                        <span class="font-lexend font-light">e</span>
+                        <span class="font-lexend font-light text-white">e</span>
                     </h1>
                     <div class="flex justify-center md:justify-start text-white md:text-second font-lexend font-bold">
                         <h1>Consultas</h1>
                     </div>
-                    <div class="flex justify-center md:justify-start font-lexend font-light">
+                    <div class="flex justify-center text-white md:justify-start font-lexend font-light">
                         <h1>em um só</h1>
                     </div>
-                    <div class="flex justify-center md:justify-start font-lexend font-light">
+                    <div class="flex justify-center text-white md:justify-start font-lexend font-light">
                         <h1>Lugar</h1>
                     </div>
                 </div>

@@ -50,16 +50,7 @@
                                     Angelita Vilarim
                                 </div>
                                 <div class="text-center font-lexend font-light text-gray-900">
-                                    A mais linda enfermeira
-                                    <div class="flex justify-center items-center">
-                                        <div class="mr-1">
-                                            Roubou meu
-                                        </div>
-                                        <span
-                                            class="flex self-center material-symbols-outlined text-red-900 hover:text-first !text-[30px]">
-                                            favorite
-                                        </span>
-                                    </div>
+                                    Cardiologista
                                 </div>
                             </div>
                         </div>
