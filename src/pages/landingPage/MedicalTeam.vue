@@ -47,7 +47,7 @@
                             <img src="/nurse.png" alt="" class="h-80 md:h-100 row-span-4 ">
                             <div class="row-span-1 text-center">
                                 <div class="text-center font-lexend font-semibold text-gray-900">
-                                    Ana Paula Maia
+                                    Mafira Saft
                                 </div>
                                 <div class="text-center font-lexend font-light text-gray-900">
                                     Cardiologista
