@@ -33,7 +33,7 @@
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="grid grid-rows-5 gap-4 place-content-center">
-                            <img src="/doctor_2.png" alt="" class="h-80 md:h-100 row-span-4">
+                            <img src="/doctor_3.png" alt="" class="h-80 md:h-100 row-span-4">
                             <div class="row-span-1 text-center">
                                 <div class="text-center font-lexend font-semibold text-gray-900">
                                     Daniel Lima
@@ -44,10 +44,10 @@
                             </div>
                         </div>
                         <div class="grid grid-rows-5 gap-4 place-content-center">
-                            <img src="/Angelita_nurse.png" alt="" class="h-80 md:h-100 row-span-4 ">
+                            <img src="/nurse.png" alt="" class="h-80 md:h-100 row-span-4 ">
                             <div class="row-span-1 text-center">
                                 <div class="text-center font-lexend font-semibold text-gray-900">
-                                    Angelita Vilarim
+                                    Ana Paula Maia
                                 </div>
                                 <div class="text-center font-lexend font-light text-gray-900">
                                     Cardiologista

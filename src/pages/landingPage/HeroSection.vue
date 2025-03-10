@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="w-full ">
-                    <img src="/doctor.png" alt="" class="h-100 lg:h-120">
+                    <img src="/doctor_2.png" alt="" class="h-100 lg:h-120">
                 </div>
             </div>
         </div>
