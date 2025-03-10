@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="grid grid-rows-5 gap-4 place-content-center">
-                            <img src="/Angelita_norse.png" alt="" class="h-80 md:h-100 row-span-4 ">
+                            <img src="/Angelita_nurse.png" alt="" class="h-80 md:h-100 row-span-4 ">
                             <div class="row-span-1 text-center">
                                 <div class="text-center font-lexend font-semibold text-gray-900">
                                     Angelita Vilarim
