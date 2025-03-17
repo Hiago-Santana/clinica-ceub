@@ -30,7 +30,7 @@
             </div>
             <div class="">
                 <ul class="w-full flex justify-end items-center ">
-                    <li>
+                    <!-- <li>
                         <a href="#"
                             class="hidden md:block py-2 px-3 text-white dark:text-white md:dark:text-white">Download</a>
                     </li>
@@ -38,14 +38,14 @@
                         <a href="#" @click="goTo('login')"
                             class="hidden md:block py-2 px-3 text-white dark:text-white md:dark:text-white"
                             aria-current="page">Criar Conta</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#" @click="goTo('login')"
                             class=" border-2 border-white rounded-xl hidden md:block py-1 px-3 text-white dark:text-white md:dark:text-white mx-4">
                             <div class="flex">
-                                Entrar
+                                Agendar
                                 <span class="ml-2 material-symbols-outlined text-white">
-                                    login
+                                    event_available
                                 </span>
                             </div>
                         </a>
@@ -58,4 +58,7 @@
     </nav>
 </template>
 <script setup>
+import { ref } from 'vue';
+
+const showBar = ref(false)
 </script>
