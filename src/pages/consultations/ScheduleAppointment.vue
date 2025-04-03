@@ -1,5 +1,6 @@
 <template>
     <div class="h-screen w-screen">
+        <button @click="testerWorker()" >Teste</button>
         <vue-cal 
             ref="exCreateEventsVueCalEl" 
             editable-events 
@@ -13,6 +14,8 @@
 import { ref, onMounted } from 'vue'
 import { VueCal } from 'vue-cal'
 import 'vue-cal/style'
+
+import { teste } from '../../worker/requestWorker';
 
 const events = ref([]);
 
@@ -49,5 +52,9 @@ const createEvent = ({ cursor }) => {
   exCreateEventsVueCalEl.value.view.createEvent(newEvent);
   events.value.push(newEvent); // Adiciona ao array para controle
 };
+
+async function testerWorker () {
+  await teste().
+}
 
 </script>
