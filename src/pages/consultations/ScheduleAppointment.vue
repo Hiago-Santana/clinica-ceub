@@ -54,7 +54,7 @@ const createEvent = ({ cursor }) => {
 };
 
 async function testerWorker () {
-  await teste().
+  await teste();
 }
 
 </script>

@@ -3,7 +3,7 @@ const api_url = "http://127.0.0.1:8787/"; //teste local
 export async function teste() {
     try {
       const data = {
-        teste: "teste"
+        type: "teste"
       };
       const response = await fetch(api_url, {
         method: "POST",
@@ -14,8 +14,8 @@ export async function teste() {
       });
   
       const result = await response.json();
-      return result;
       console.log("result request", result)
+      return result;
     } catch (error) {
       console.error("Error:", error);
     }
