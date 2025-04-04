@@ -1,18 +1,20 @@
 <template>
     <div class="h-screen w-screen">
         <button @click="testerWorker()" >Teste</button>
-        <vue-cal 
+        <calendar></calendar>
+        <!-- <vue-cal 
             ref="exCreateEventsVueCalEl" 
             editable-events 
             @cell-dblclick="createEvent"
             :time-from="6 * 60" :time-to="17 * 60" :time-step="30"
             :snap-to-interval="30"
-            >></vue-cal>
+            >></vue-cal> -->
     </div>
 </template>
 <script setup>
 import { ref, onMounted } from 'vue'
 import { VueCal } from 'vue-cal'
+import Calendar from './Calendar.vue';
 import 'vue-cal/style'
 
 import { teste } from '../../worker/requestWorker';
