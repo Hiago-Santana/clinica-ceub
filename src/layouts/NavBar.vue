@@ -6,15 +6,15 @@
                 <span class=" h-12 flex mx-4 justify-center items-center ">
                     <button @click='showBar = true' class="flex">
                         <span
-                            class="material-symbols-outlined text-white hover:text-first dark:text-white">menu</span>
+                            class="material-symbols-outlined text-white bg-second hover:text-first dark:text-white">menu</span>
                     </button>
                 </span>
                 <div class="">
                     <img src="/logo-ceub-white.webp" alt="Clinica Ceub" class="pl-2 h-12">
                 </div>
-                <a href="#" @click="goTo('login')"
+                <a href="#" @click="goTo('scheduleAppointment')"
                     class="flex border-2 border-white rounded-xl py-1 px-3 text-white dark:text-white md:dark:text-blue-500 mx-4">
-                    Entrar
+                    Agendar
                     <span class="ml-2 material-symbols-outlined text-white">
                         login
                     </span>
@@ -29,7 +29,7 @@
             </div>
             <div class="">
                 <ul class="w-full flex justify-end items-center ">
-                    <li>
+                    <!-- <li>
                         <a href="#"
                             class="hidden md:block py-2 px-3 text-white dark:text-white md:dark:text-white">Download</a>
                     </li>
@@ -37,14 +37,14 @@
                         <a href="#" @click="goTo('login')"
                             class="hidden md:block py-2 px-3 text-white dark:text-white md:dark:text-white"
                             aria-current="page">Criar Conta</a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="#" @click="goTo('login')"
+                        <a href="#" @click="goTo('scheduleAppointment')"
                             class=" border-2 border-white rounded-xl hidden md:block py-1 px-3 text-white dark:text-white md:dark:text-white mx-4">
                             <div class="flex">
-                                Entrar
+                                Agendar
                                 <span class="ml-2 material-symbols-outlined text-white">
-                                    login
+                                    event_available
                                 </span>
                             </div>
                         </a>
@@ -57,4 +57,15 @@
     </nav>
 </template>
 <script setup>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+
+const router = useRouter();
+const showBar = ref(false)
+
+const goTo = (nameRouter) => {
+    router.push({name: nameRouter})
+}
+
 </script>

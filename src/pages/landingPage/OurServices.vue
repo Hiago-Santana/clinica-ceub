@@ -9,7 +9,7 @@
                 <div class="grid row-span-7 grid-rows-2 justify-center itemns-center gap-8">
                     <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-8">
                         <div
-                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
+                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border border-transparent rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
                             <span
                                 class="flex self-center material-symbols-outlined text-first hover:text-first !text-[80px]">
                                 radiology
@@ -24,7 +24,7 @@
                             </p>
                         </div>
                         <div
-                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
+                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border border-transparent rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
                             <span
                                 class="flex self-center material-symbols-outlined text-first hover:text-first !text-[80px]">
                                 medical_services
@@ -38,7 +38,7 @@
                             </p>
                         </div>
                         <div
-                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
+                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border border-transparent rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
                             <span
                                 class="flex self-center material-symbols-outlined text-first hover:text-first !text-[80px]">
                                 devices
@@ -54,7 +54,7 @@
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-8">
                         <div
-                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
+                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border border-transparent rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
                             <span
                                 class="flex self-center material-symbols-outlined text-first hover:text-first !text-[80px]">
                                 support_agent
@@ -67,7 +67,7 @@
                             </p>
                         </div>
                         <div
-                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
+                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border border-transparent rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
                             <span
                                 class="flex self-center material-symbols-outlined text-first hover:text-first !text-[80px]">
                                 diagnosis
@@ -80,7 +80,7 @@
                             </p>
                         </div>
                         <div
-                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
+                            class="grid grid-rows-3 place-items-center h-full justify-center items-center border border-transparent rounded-xl px-4 shadow-[0_4px_4px_2px_rgba(0,0,0,0.3)]">
                             <span
                                 class="flex self-center material-symbols-outlined text-first hover:text-first !text-[80px]">
                                 pin_drop
