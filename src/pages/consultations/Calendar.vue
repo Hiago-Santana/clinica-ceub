@@ -1,21 +1,36 @@
 <template>
-    <div class="w-full bg-blue-900">
-        <div class="grid grid-rows-2">
-            <div class="grid grid-cols-7 gap-2 ">
-                <div>Dom</div>
-                <div>Seg</div>
-                <div>Ter</div>
-                <div>Qua</div>
-                <div>Qui</div>
-                <div>Sex</div>
-                <div>Sab</div>
-            </div>
-            <div class="grid grid-cols-7">
-                <div v-for="daysOfTheWeeks in daysOfTheWeek" :key="daysOfTheWeeks">
-                    {{ daysOfTheWeeks }}
+    <div class="w-full px-2">
+        <div class="flex bg-blue-900 rounded-md ">
+            <button class="flex w-8 self-center justify-center">
+                <span class="material-symbols-outlined">
+                    chevron_left
+                </span>
+            </button>
+            <div class="flex-auto">
+                <div class="grid grid-rows-2">
+                    <div class="grid grid-cols-7 justify-items-center font-bold">
+                        <div>Dom</div>
+                        <div>Seg</div>
+                        <div>Ter</div>
+                        <div>Qua</div>
+                        <div>Qui</div>
+                        <div>Sex</div>
+                        <div>Sab</div>
+                    </div>
+                    <div class="grid grid-cols-7 justify-items-center">
+                        <div v-for="daysOfTheWeeks in daysOfTheWeek" :key="daysOfTheWeeks">
+                            {{ daysOfTheWeeks }}
+                        </div>
+                    </div>
                 </div>
             </div>
+            <button class="flex w-8 self-center justify-center">
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </button>
         </div>
+
 
         {{ dayOfTheWeekToday }}
     </div>
@@ -48,6 +63,10 @@ function getfirstDayOfTheWeek() {
     firstDayOfTheWeek.setDate(today.getDate() - dayOfTheWeekToday)
     console.log("firstDayOfTheWeek ", firstDayOfTheWeek)
     return firstDayOfTheWeek;
+}
+
+const farwordWeekChanger = (action) => {
+    
 }
 
 
