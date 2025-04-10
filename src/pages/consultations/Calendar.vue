@@ -1,8 +1,8 @@
 <template>
     <div class="w-full px-2">
-        <div class="flex bg-blue-900 rounded-md ">
-            <button class="flex w-8 self-center justify-center">
-                <span class="material-symbols-outlined">
+        <div class="flex bg-blue-900 rounded-md">
+            <button @click="delayWeek()" class="flex w-8 h-12 rounded-md self-center justify-center bg-second">
+                <span class="material-symbols-outlined self-center">
                     chevron_left
                 </span>
             </button>
@@ -17,22 +17,19 @@
                         <div>Sex</div>
                         <div>Sab</div>
                     </div>
-                    <div class="grid grid-cols-7 justify-items-center">
+                    <div  class="grid grid-cols-7 justify-items-center">
                         <div v-for="daysOfTheWeeks in daysOfTheWeek" :key="daysOfTheWeeks">
                             {{ daysOfTheWeeks }}
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="flex w-8 self-center justify-center">
-                <span class="material-symbols-outlined">
+            <button @click="advanceWeek()" class="flex w-8 h-12 rounded-md self-center justify-center bg-second">
+                <span class="material-symbols-outlined self-center">
                     chevron_right
                 </span>
             </button>
         </div>
-
-
-        {{ dayOfTheWeekToday }}
     </div>
 </template>
 <script setup>
@@ -42,18 +39,16 @@ import { subDays, addDays } from 'date-fns';
 const daysOfTheWeek = ref([]);
 
 onMounted(() => {
-    getDaysOfTheWeek();
+    getDaysOfTheWeek(getfirstDayOfTheWeek());
 })
 
 
-function getDaysOfTheWeek() {
-    const firstDayOfTheWeek = new Date(getfirstDayOfTheWeek());
+function getDaysOfTheWeek(firstDayOfTheWeek) {
+    
     daysOfTheWeek.value = [];
     for (let i = 0; i < 7; i++) {
         daysOfTheWeek.value.push(addDays(firstDayOfTheWeek, i).getDate());
     }
-    console.log("daysOfTheWeek", daysOfTheWeek.value)
-
 }
 
 function getfirstDayOfTheWeek() {
@@ -65,8 +60,16 @@ function getfirstDayOfTheWeek() {
     return firstDayOfTheWeek;
 }
 
-const farwordWeekChanger = (action) => {
-    
+const advanceWeek = () => {
+    for(let i = 0; i < daysOfTheWeek.value.length; i++){
+        daysOfTheWeek.value[i] += 7
+    }
+}
+
+const delayWeek = () => {
+    for(let i = 0; i < daysOfTheWeek.value.length; i++){
+        daysOfTheWeek.value[i] -= 7
+    }
 }
 
 
