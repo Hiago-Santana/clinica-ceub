@@ -17,7 +17,7 @@
                 </button>
                 <div class="flex-auto">
                     <div class="grid grid-rows-2">
-                        <div class="grid grid-cols-7 justify-items-center font-bold">
+                        <div class="grid grid-cols-7 justify-items-center font-bold ">
                             <div>Dom</div>
                             <div>Seg</div>
                             <div>Ter</div>
@@ -27,9 +27,9 @@
                             <div>Sab</div>
                         </div>
                         <div class="grid grid-cols-7 justify-items-center">
-                            <div v-for="daysOfTheWeeks in daysOfTheWeek" :key="daysOfTheWeeks">
+                            <button v-for="daysOfTheWeeks in daysOfTheWeek" :key="daysOfTheWeeks" class="focus:bg-amber-300 ">
                                 {{ daysOfTheWeeks }}
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -93,6 +93,8 @@ const startCalendar = () => {
 
 const getMonthOfTheWeek = () => {
     monthOfTheWeek.value = format(firstDayOfTheWeek.value, "MMMM", { locale: ptBR });
+    const dayFormat = format(firstDayOfTheWeek.value, "D", { locale: ptBR });
+    console.log("dayFormat", dayFormat)
 }
 
 
