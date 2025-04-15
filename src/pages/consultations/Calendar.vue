@@ -4,11 +4,11 @@
 
         </div>
 
-        <div class="grid grid-rows-2 bg-blue-900 rounded-md">
-            <div class="grid justify-items-center self-center text-xl font-semibold">
+        <div class="grid grid-rows-4 bg-blue-900 rounded-md h-26 p-4 gap-2">
+            <div class="grid  justify-items-center self-center text-xl font-semibold">
                 {{ monthOfTheWeek }}
             </div>
-            <div class="flex ">
+            <div class="flex row-span-3">
 
                 <button @click="delayWeek()" class="flex w-8 h-12 rounded-md self-center justify-center bg-second">
                     <span class="material-symbols-outlined self-center">
@@ -16,19 +16,16 @@
                     </span>
                 </button>
                 <div class="flex-auto">
-                    <div class="grid grid-rows-2">
-                        <div class="grid grid-cols-7 justify-items-center font-bold ">
-                            <div>Dom</div>
-                            <div>Seg</div>
-                            <div>Ter</div>
-                            <div>Qua</div>
-                            <div>Qui</div>
-                            <div>Sex</div>
-                            <div>Sab</div>
+                    <div class="grid grid-rows-2 h-5 gap-6">
+                        <div class="grid grid-cols-7 justify-items-center font-semibold">
+                            <button v-for="daysOfTheWeeks in daysOfTheWeek" :key="daysOfTheWeeks">
+                                {{ daysOfTheWeeks.dayWeekFormated }}
+                            </button>
                         </div>
                         <div class="grid grid-cols-7 justify-items-center">
-                            <button v-for="daysOfTheWeeks in daysOfTheWeek" :key="daysOfTheWeeks" class="focus:bg-amber-300 ">
-                                {{ daysOfTheWeeks }}
+                            <button v-for="daysOfTheWeeks in daysOfTheWeek" :key="daysOfTheWeeks" @click="chosenDate(daysOfTheWeeks)"
+                                class="focus:bg-second rounded-xl h-8 w-8">
+                                {{ daysOfTheWeeks.dayFormated }}
                             </button>
                         </div>
                     </div>
@@ -46,9 +43,9 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import { subDays, addDays, format } from 'date-fns';
-import { ptBR } from 'date-fns/locale';
+import { pt, ptBR } from 'date-fns/locale';
 
-const daysOfTheWeek = ref([]);
+const daysOfTheWeek = ref();
 const firstDayOfTheWeek = ref();
 const monthOfTheWeek = ref();
 
@@ -62,7 +59,10 @@ function getDaysOfTheWeek() {
 
     daysOfTheWeek.value = [];
     for (let i = 0; i < 7; i++) {
-        daysOfTheWeek.value.push(addDays(firstDayOfTheWeek.value, i).getDate());
+        const day = addDays(firstDayOfTheWeek.value, i)
+        const dayFormated = format(day, 'dd');
+        const dayWeekFormated = format(day, "EEEEEE", { locale: ptBR });
+        daysOfTheWeek.value.push({ day:day, dayFormated: dayFormated, dayWeekFormated: dayWeekFormated });
     }
 }
 
@@ -93,8 +93,12 @@ const startCalendar = () => {
 
 const getMonthOfTheWeek = () => {
     monthOfTheWeek.value = format(firstDayOfTheWeek.value, "MMMM", { locale: ptBR });
-    const dayFormat = format(firstDayOfTheWeek.value, "D", { locale: ptBR });
+    const dayFormat = format(firstDayOfTheWeek.value, "EEEEEE", { locale: ptBR });
     console.log("dayFormat", dayFormat)
+}
+
+const chosenDate = (date) => {
+    console.log("date",date.day)
 }
 
 
