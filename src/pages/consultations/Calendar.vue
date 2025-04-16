@@ -1,8 +1,10 @@
 <template>
     <div class="w-full px-2">
-        <div class="bg-red-500">
-
-        </div>
+        
+            <button @click="getScheduled()" class="bg-red-500">
+                queriesDoctorss
+            </button>
+        
 
         <div class="grid grid-rows-4 bg-blue-900 rounded-md h-26 p-4 gap-2">
             <div class="grid  justify-items-center self-center text-xl font-semibold">
@@ -44,6 +46,7 @@
 import { onMounted, ref } from 'vue';
 import { subDays, addDays, format } from 'date-fns';
 import { pt, ptBR } from 'date-fns/locale';
+import { getScheaduledWorker } from '../../worker/requestWorker.js';
 
 const daysOfTheWeek = ref();
 const firstDayOfTheWeek = ref();
@@ -99,6 +102,10 @@ const getMonthOfTheWeek = () => {
 
 const chosenDate = (date) => {
     console.log("date",date.day)
+}
+
+async function getScheduled () {
+    await getScheaduledWorker();
 }
 
 
