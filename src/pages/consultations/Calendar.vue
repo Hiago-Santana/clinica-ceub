@@ -51,10 +51,12 @@ import { getScheaduledWorker } from '../../worker/requestWorker.js';
 const daysOfTheWeek = ref();
 const firstDayOfTheWeek = ref();
 const monthOfTheWeek = ref();
+const availableTimes  = ref();
 
 onMounted(() => {
     //getDaysOfTheWeek(getfirstDayOfTheWeek());
-    startCalendar()
+    startCalendar();
+    getScheduled();
 })
 
 
@@ -105,7 +107,8 @@ const chosenDate = (date) => {
 }
 
 async function getScheduled () {
-    await getScheaduledWorker();
+    availableTimes.value = null;
+    availableTimes.value = await getScheaduledWorker();
 }
 
 
