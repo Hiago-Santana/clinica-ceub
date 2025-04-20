@@ -1,6 +1,5 @@
 <template>
     <div class=" bg-white">
-        <button @click="testerWorker()" >Teste</button>
         <calendar></calendar>
         <!-- <vue-cal 
             ref="exCreateEventsVueCalEl" 
@@ -18,10 +17,6 @@ import Calendar from './Calendar.vue';
 import 'vue-cal/style'
 
 const events = ref([]);
-
-onMounted(() => {
-    console.log("VueCal carregado:", exCreateEventsVueCalEl.value);
-});
 
 const exCreateEventsVueCalEl = ref(null);
 

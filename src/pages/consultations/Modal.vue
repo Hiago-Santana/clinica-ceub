@@ -40,8 +40,8 @@
   
   const emit = defineEmits(['update:show', 'submit'])
   
-  const userName = ref('Hiago')
-  const userCpf = ref('12345678900')
+  const userName = ref('')
+  const userCpf = ref('')
   
   watch(() => props.show, (newVal) => {
     if (!newVal) {

@@ -89,9 +89,7 @@
                     </div>
                 </button>
             </div>
-            <div class="text-black">{{ daySelected }}</div>
             <Modal v-model:show="showModal" :selectedTime="selectedTime" @submit="handleSubmit" />
-
 
         </div>
     </div>
