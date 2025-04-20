@@ -1,4 +1,5 @@
-const api_url = "http://127.0.0.1:8787/"; //teste local
+const api_url =  "https://worker-clinica-ceub.hiago-douglas.workers.dev/"
+//const api_url = "http://127.0.0.1:8787/"; //teste local
 
 export async function getScheaduledWorker() {
   try {
