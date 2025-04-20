@@ -22,22 +22,12 @@
             </div>
         </div>
 
-        <div class="w-full h-full flex justify-between mx-auto items-center">
+        <div class="w-full flex justify-between mx-auto items-center">
             <div class="flex justify-start">
                 <img src="/logo-ceub-white.webp" alt="Clinica Ceub" class="pl-2 hidden md:block mr-2 h-12">
-                <!-- <div class="self-center text-2xl font-russo text-white hidden md:block">AgendaCheck</div> -->
             </div>
             <div class="">
                 <ul class="w-full flex justify-end items-center ">
-                    <!-- <li>
-                        <a href="#"
-                            class="hidden md:block py-2 px-3 text-white dark:text-white md:dark:text-white">Download</a>
-                    </li>
-                    <li>
-                        <a href="#" @click="goTo('login')"
-                            class="hidden md:block py-2 px-3 text-white dark:text-white md:dark:text-white"
-                            aria-current="page">Criar Conta</a>
-                    </li> -->
                     <li>
                         <a href="#" @click="goTo('scheduleAppointment')"
                             class=" border-2 border-white rounded-xl hidden md:block py-1 px-3 text-white dark:text-white md:dark:text-white mx-4">

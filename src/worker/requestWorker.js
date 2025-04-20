@@ -14,17 +14,18 @@ export async function getScheaduledWorker() {
     });
 
     const result = await response.json();
-    console.log("result request", result)
+    //console.log("result request", result)
     return result;
   } catch (error) {
     console.error("Error:", error);
   }
 }
 
-export async function teste() {
+export async function scheduleappointmentWorker(datascheduleappointment) {
     try {
       const data = {
-        type: "teste"
+        type: "scheduleappointmentWorker",
+        datascheduleappointment: datascheduleappointment
       };
       const response = await fetch(api_url, {
         method: "POST",
