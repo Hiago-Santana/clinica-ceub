@@ -161,18 +161,15 @@ const startCalendar = async () => {
 const getMonthOfTheWeek = () => {
     monthOfTheWeek.value = format(firstDayOfTheWeek.value, "MMMM", { locale: ptBR });
     const dayFormat = format(firstDayOfTheWeek.value, "EEEEEE", { locale: ptBR });
-    console.log("dayFormat", dayFormat)
 }
 
 const chosenDate = (date) => {
-    console.log("date", date)
     selectedDate.value = date;
 }
 
 async function getScheduled() {
     availableTimes.value = await getScheaduledWorker();
     availableTimes.value = availableTimes.value.result.queriesDoctors;
-    console.log("availableTimes", availableTimes.value)
 }
 
 
@@ -201,7 +198,6 @@ function openModal(time) {
     selectedTime.value = time
     showModal.value = true
     selectedDoctor.value = time.doctorName
-    console.log("time", time)
 }
 
 async function handleSubmit(data) {

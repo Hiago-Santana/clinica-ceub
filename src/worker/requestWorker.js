@@ -15,7 +15,6 @@ export async function getScheaduledWorker() {
     });
 
     const result = await response.json();
-    //console.log("result request", result)
     return result;
   } catch (error) {
     console.error("Error:", error);
@@ -34,10 +33,8 @@ export async function scheduleappointmentWorker(datascheduleappointment) {
           "content-type": "application/json",
         },
         body: JSON.stringify(data),
-      });
-  
+      });  
       const result = await response.json();
-      console.log("result request", result)
       return result;
     } catch (error) {
       console.error("Error:", error);
