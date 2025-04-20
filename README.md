@@ -1,5 +1,30 @@
-# Vue 3 + Vite
+# Frontend - Clínica CEUB
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este é o frontend do projeto **Clínica CEUB**. Ele permite aos usuários agendarem consultas, visualizarem horários disponíveis e muito mais.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 🚀 Como rodar o projeto localmente
+
+### 1. Clonar o repositório
+
+Primeiro, clone o repositório para o seu ambiente local:
+
+```bash
+git clone https://github.com/SEU-USUARIO/clinica-ceub.git
+
+2. Instalar dependências
+Entre na pasta do projeto e execute o comando para instalar as dependências:
+
+cd clinica-ceub
+npm install
+
+3. Rodar o projeto em modo de desenvolvimento
+Após a instalação, você pode rodar o projeto localmente com:
+
+npm run dev
+
+4. Tecnologias Utilizadas
+Vue 3 com Vite
+
+Tailwind CSS para estilização
+
+Vue Router para navegação entre páginas
