@@ -4,7 +4,7 @@ Este é o frontend do projeto **Clínica CEUB**. Ele permite aos usuários agend
 
 ## 🚀 Como rodar o projeto localmente
 
-### 1. Clonar o repositório
+1. Clonar o repositório
 
 Primeiro, clone o repositório para o seu ambiente local:
 
