@@ -8,7 +8,6 @@ Este é o frontend do projeto **Clínica CEUB**. Ele permite aos usuários agend
 
 Primeiro, clone o repositório para o seu ambiente local:
 
-```bash
 git clone https://github.com/SEU-USUARIO/clinica-ceub.git
 
 2. Instalar dependências
